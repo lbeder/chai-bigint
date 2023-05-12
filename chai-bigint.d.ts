@@ -1,5 +1,6 @@
-/* eslint-disable no-use-before-define */
-import chai from 'chai';
+/// <reference types="chai" />
+
+export default Chai.ChaiPlugin;
 
 declare global {
   export namespace Chai {
