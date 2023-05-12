@@ -8,8 +8,8 @@
   },
   "author": "Leonid Beder",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/chai-bigint.js",
+  "types": "./dist/chai-bigint.d.ts",
   "files": [
     "/dist"
   ],
