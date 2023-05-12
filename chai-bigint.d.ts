@@ -1,6 +1,9 @@
 /// <reference types="chai" />
 
-export default Chai.ChaiPlugin;
+declare module 'chai-bigint' {
+  const chaiBigInt: Chai.ChaiPlugin;
+  export = chaiBigInt;
+}
 
 declare global {
   export namespace Chai {
