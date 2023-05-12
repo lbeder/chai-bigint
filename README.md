@@ -3,7 +3,7 @@
 [![NPM Package](https://img.shields.io/npm/v/lbeder/chai-bigint.svg)](https://www.npmjs.org/package/lbeder/chai-bigint)
 [![Test](https://github.com/lbeder/chai-bigint/actions/workflows/ci.yml/badge.svg)](https://github.com/lbeder/chai-bigint/actions/workflows/ci.yml)
 
-[`Chai`](https://www.chaijs.com/) assertions for comparing arbitrary-precision integers using the native `bigint` type. Adapted from [chai-bn](https://github.com/OpenZeppelin/chai-bn).
+[`Chai`](https://www.chaijs.com/) assertions for comparing arbitrary-precision integers using the `bigint` native type. Adapted from [ethereum-waffle](https://github.com/TrueFiEng/Waffle/blob/master/waffle-chai/src/matchers/bigNumber.ts).
 
 ## Installation
 
@@ -53,19 +53,9 @@ Methods:
 const actual = 100000000000000000n + 1n;
 const expected = 100000000000000001n;
 
-actual.should.be.a.bigint.that.equals(expected);
-expect(actual).to.be.a.bigint.that.is.at.most(expected);
-BigInt(1000).should.be.a.bigint.that.is.lessThan('2000');
+expect(actual).to.be.equal(expected);
+expect(actual).to.be.gt(100n);
 ```
-
-Properties:
-
-```javascript
-expect(-100n).to.be.a.bigint.that.is.negative;
-expect(0n).to.be.a.bigint.that.is.zero;
-```
-
-Some `Chai` properties (e.g. the `that.is` chain) have no effect other than increasing readability, and can be dropped if less verbosity is desired.
 
 ## License
 

@@ -1,38 +1,21 @@
 {
-  "extends": ["standard", "prettier"],
-  "env": {
-    "mocha": true
-  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
   "rules": {
-    "camelcase": [
-      "error",
-      {
-        "ignoreImports": true
-      }
-    ],
-    "indent": [
-      "error",
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
     "semi": ["error", "always"],
-    "no-plusplus": "off",
-    "no-await-in-loop": "off",
-    "no-restricted-syntax": "off",
-    "no-continue": "off",
-    "arrow-body-style": "off",
-    "no-loop-func": "off",
-    "no-unused-expressions": "off",
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "no-console": "error",
     "require-await": "error",
-    "no-return-await": "error"
-  },
-  "globals": {
-    "assert": true,
-    "expect": true,
-    "artifacts": true,
-    "contract": true,
-    "web3": true
+    "no-return-await": "error",
+    "object-shorthand-properties-first": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ]
   }
 }
