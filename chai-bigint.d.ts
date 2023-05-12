@@ -1,7 +1,5 @@
 /* eslint-disable no-use-before-define */
-import 'chai';
-
-export default function (BigIntModule: any): any;
+import chai from 'chai';
 
 declare global {
   export namespace Chai {

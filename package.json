@@ -12,7 +12,7 @@
   "types": "chai-bigint.d.ts",
   "scripts": {
     "test": "mocha --recursive --exit --timeout 600000 --bail --no-exit 'test/**/*.js'",
-    "lint": "eslint -c .eslintrc --ext .js *.js",
+    "lint": "eslint -c .eslintrc",
     "format": "prettier --check --write js.ts test/**/*.js  --config .prettierrc"
   },
   "dependencies": {
