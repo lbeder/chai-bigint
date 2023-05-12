@@ -22,7 +22,7 @@ npm install chai-bigint --save-dev
 ```javascript
 const chai = require('chai');
 
-chai.use(require('chai-bigint');
+chai.use(require('chai-bigint'));
 ```
 
 ## Assertions
@@ -61,8 +61,8 @@ BigInt(1000).should.be.a.bigint.that.is.lessThan('2000');
 Properties:
 
 ```javascript
-BigInt('-100').should.be.a.bigint.that.is.negative;
-expect(BigInt('1').sub(BigInt('1'))).to.be.a.bigint.that.is.zero;
+expect(-100n).to.be.a.bigint.that.is.negative;
+expect(0n).to.be.a.bigint.that.is.zero;
 ```
 
 Some `Chai` properties (e.g. the `that.is` chain) have no effect other than increasing readability, and can be dropped if less verbosity is desired.
