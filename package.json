@@ -1,0 +1,36 @@
+{
+  "name": "chai-bigint",
+  "version": "0.1.0",
+  "description": "Chai assertions for comparing arbitrary-precision integers using the native bigint type",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbeder/chai-bigint"
+  },
+  "author": "Leonid Beder",
+  "license": "MIT",
+  "main": "chai-bigint.js",
+  "types": "chai-bigint.d.ts",
+  "scripts": {
+    "test": "mocha --recursive --exit --timeout 600000 --bail --no-exit 'test/**/*.js'",
+    "lint": "eslint -c .eslintrc --ext .js *.js",
+    "format": "prettier --check --write js.ts test/**/*.js  --config .prettierrc"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "chai": "^4.3.7",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.8",
+    "prettier-package-json": "^2.8.0"
+  }
+}
