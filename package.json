@@ -18,7 +18,7 @@
     "test": "mocha --require ts-node/register --extension ts --recursive --exit --timeout 600000 --bail --no-exit 'test/**/*.ts'",
     "lint": "eslint -c .eslintrc --ext .ts src test",
     "format": "prettier --check --write src/**/*.ts test/**/*.ts  --config .prettierrc",
-    "prepare-release": "yarn lint && yarn test && yarn build"
+    "prepare:release": "yarn lint && yarn test && yarn build"
   },
   "dependencies": {
     "yargs": "^17.7.2"
