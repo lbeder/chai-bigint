@@ -1,6 +1,6 @@
 {
   "name": "chai-bigint",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Chai assertions for comparing arbitrary-precision integers using the native bigint type",
   "repository": {
     "type": "git",
